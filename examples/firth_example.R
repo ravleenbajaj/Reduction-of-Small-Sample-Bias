@@ -16,3 +16,15 @@ X1 = X1
 return(df)
 }
 data <- generate_data(50, 0.5, -0.3)
+
+head(data)
+
+fit_MLE <- glm(y ~ X1, family=binomial(link="logit"), data=data)
+summary(fit_MLE)
+
+fit_Firth <- glm(y ~ X1, family=binomial(link="logit"), data=data,
+method=brglmFit, type="AS_mean")
+summary(fit_Firth
+
+
+
