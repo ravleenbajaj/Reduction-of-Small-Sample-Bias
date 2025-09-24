@@ -1,20 +1,7 @@
 # Loading the required libraries
 library(brglm2)
 library(tidyverse)
-# A function to simulate a dataset with one categorical variable with four categories
-generate_data <- function(n, beta_0, beta_1){
-X1 <- rnorm(n, mean = 0, sd = 2)
-X <- cbind(1, X1)
-beta_true <- c(beta_0, beta_1)
-eta <- X %*% beta_true
-p <- 1 / (1 + exp(-eta))
-y <- rbinom(n, size = 1, prob = p)
-df <- data.frame(
-y = y,
-X1 = X1
-)
-return(df)
-}
+
 # Function to check coverage for a model
 check_coverage <- function(fit, true_betas) {
 ci <- confint.default(fit) # Wald CI
@@ -269,3 +256,4 @@ color = "Method"
 geom_hline(yintercept = 0.95, linetype = "dashed", color = "black") +
 
 theme_minimal()
+
