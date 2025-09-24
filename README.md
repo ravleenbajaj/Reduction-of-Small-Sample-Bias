@@ -25,11 +25,8 @@ This project examines the performance of three bias reduction techniques for Max
 ├── README.md
 ├── src/
 │   ├── asymptotic_bias_correction.R
-│   ├── firth_method.R
-│   ├── log_f_prior.R
-│   └── simulation_study.R
 ├── data/
-│   └── example_datasets.R
+│   └── generate_data.R
 ├── results/
 │   ├── figures/
 │   └── simulation_results.csv
