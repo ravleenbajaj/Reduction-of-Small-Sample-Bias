@@ -104,10 +104,6 @@ Run the complete simulation study:
 ```r
 source("src/simulation_study.R")
 
-# Run simulation for different scenarios
-results_easy <- run_simulation_study(scenario = "easy", n_range = c(10, 20, 30, 50, 100))
-results_moderate <- run_simulation_study(scenario = "moderate", n_range = c(10, 20, 30, 50, 100))
-results_extreme <- run_simulation_study(scenario = "extreme", n_range = c(10, 20, 30, 50, 100))
 ```
 
 ## Method Comparison Summary
