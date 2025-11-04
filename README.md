@@ -2,7 +2,7 @@
 
 # Reduction of Small-Sample Bias of GLM Parameter Estimates
 
-A comprehensive study comparing three bias reduction methods for Generalized Linear Models (GLMs) in small-sample settings.
+A comprehensive study comparing three bias reduction methods for Generalized Linear Models (GLMs) in small-sample settings. This project was submitted for partial fulfillment of the grade for STAT 851.
 
 ## Overview
 
