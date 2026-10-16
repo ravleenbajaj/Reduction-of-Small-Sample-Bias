@@ -24,14 +24,11 @@ This project examines the performance of three bias reduction techniques for Max
 ```
 ├── README.md
 ├── src/
-│   ├── asymptotic_bias_correction.R
+│   ├── simulation_study.R
 ├── data/
 │   └── generate_data.R
 ├── results/
-│   ├── figures/
-│   └── simulation_results.csv
-├── docs/
-│   └── STAT_851_Final_Project_Report.pdf
+│   └── final_slides.pdf
 └── examples/
     ├── asymptotic_example.R
     ├── firth_example.R
@@ -65,7 +62,7 @@ library(ggplot2)
 
 ### Asymptotic Bias Correction
 ```r
-source("src/asymptotic_bias_correction.R")
+#source("src/asymptotic_example.R")
 
 # Fit model with bias correction
 fit_corrected <- glm(y ~ X1, 
@@ -77,7 +74,7 @@ fit_corrected <- glm(y ~ X1,
 
 ### Firth's Method
 ```r
-source("src/firth_method.R")
+#source("src/firth_example.R")
 
 # Fit model with Firth's bias reduction
 fit_firth <- glm(y ~ X1, 
@@ -89,7 +86,7 @@ fit_firth <- glm(y ~ X1,
 
 ### Log-F Prior
 ```r
-source("src/log_f_prior.R")
+#source("src/log_f_example.R")
 
 # Apply Log-F prior with penalty parameter m=1
 fit_logf <- apply_log_f_prior(data = your_data, 
