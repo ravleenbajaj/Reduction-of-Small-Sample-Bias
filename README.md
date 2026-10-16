@@ -37,9 +37,9 @@ This project examines the performance of three bias reduction techniques for Max
 
 ## Key Findings
 
-- **Small samples (n < 20)**: Firth's method and Log-F prior show superior stability compared to asymptotic bias correction
-- **Moderate samples (n = 20-50)**: Asymptotic bias correction performs well when MLE converges
-- **Large samples (n > 50)**: All methods converge to similar performance
+- **Small samples**: Firth's method and Log-F prior show superior stability compared to asymptotic bias correction
+- **Moderate samples**: Asymptotic bias correction performs well when MLE converges
+- **Large samples**: All methods converge to similar performance
 - **Extreme scenarios**: Penalized likelihood methods (Firth, Log-F) maintain robustness when standard MLE fails
 
 ## Installation and Dependencies
